@@ -13,7 +13,7 @@ contract DataFeeds {
     }
 
     // get latest rounded value
-    function getLatestAnswer() public view returns(int) {
+    function getLatestAnswer() public view returns (int) {
         (, int answer, , ,) = dataFeed.latestRoundData();
         return answer;
     }    
